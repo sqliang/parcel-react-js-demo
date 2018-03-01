@@ -8,7 +8,7 @@
     "build": "cross-env NODE_ENV=development node ./build.js",
     "release": "cross-env NODE_ENV=production node ./build.js",
     "deploy": "fis3 release --root=./dist/ --file=./fis-conf.js",
-    "sync-rd": "npm run build && npm run deploy"
+    "sync-rd": "npm run release && npm run deploy"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "node-sass": "^4.7.2",
     "parcel-bundler": "^1.6.2",
     "postcss-modules": "^1.1.0",
+    "posthtml-img-autosize": "^0.1.2",
     "pre-commit": "^1.2.2",
     "stylelint": "^9.1.1",
     "stylelint-config-standard": "^18.1.0",
